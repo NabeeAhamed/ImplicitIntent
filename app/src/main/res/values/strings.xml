@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ImplicitIntent</string>
+    <string name="enter_the_valid_number">Enter the Valid Number</string>
+    <string name="dial">Dial</string>
+    <string name="enter_the_number">Enter the Number</string>
+    <string name="sms">sms</string>
+    <string name="enter_the_sms">Enter the Sms</string>
+    <string name="phone_number">phone_number</string>
+</resources>
