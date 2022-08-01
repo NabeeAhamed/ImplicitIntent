@@ -23,15 +23,15 @@ class MainActivity : AppCompatActivity() {
             setOnClickListener(View.OnClickListener {
                 val intent = Intent(Intent.ACTION_DIAL)
 
-                intent.data = Uri.parse("tel:" + btnDial.getText())
+                intent.data = Uri.parse("tel:8699735426" + btnDial.getText())
                 startActivity(intent) })
 
         btnsms.setOnClickListener(View.OnClickListener {
             val intent=Intent(Intent.ACTION_MAIN)
-            with(intent) {
-             getStringExtra(Intent.CATEGORY_APP_MESSAGING)
-                startActivity(this)
-            }
+
+            intent.addCategory(Intent.CATEGORY_APP_MESSAGING)
+                startActivity(intent)
+
         })
 
 
